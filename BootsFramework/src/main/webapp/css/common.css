@@ -1,0 +1,7 @@
+.login-layout {
+    background-color: #ffffff;
+}
+
+table.dataTable tbody tr.selected {
+  background-color: #b0bed9;
+}
