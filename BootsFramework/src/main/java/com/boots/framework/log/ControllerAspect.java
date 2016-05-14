@@ -3,6 +3,7 @@ package com.boots.framework.log;
 import com.boots.framework.bean.Bean;
 import com.boots.framework.bean.base.User;
 import com.boots.framework.entity.LogEntity;
+import com.boots.framework.service.LogService;
 import com.boots.framework.utils.JsonUtil;
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.Futures;
@@ -29,6 +30,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import javax.annotation.Resource;
 import javax.persistence.Entity;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -60,6 +62,8 @@ public class ControllerAspect {
     private ListeningScheduledExecutorService executorService;
 
     private BlockingQueue<LogEntity> queue;
+    @Resource(name = "logService")
+    private LogService logService;
 
     private int batchSize = 100;
 
@@ -201,6 +205,7 @@ public class ControllerAspect {
                 final List<LogEntity> entities = Lists.newArrayListWithExpectedSize(batchSize);
                 queue.drainTo(entities, batchSize);
                 logger.info("", entities);
+//                logService.save(entities);
             }
         };
 
