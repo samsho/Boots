@@ -1,4 +1,4 @@
-package com.boots.framework.controller.base;
+package com.boots.framework.controller.login;
 
 import com.boots.framework.bean.base.User;
 import com.boots.framework.utils.SidebarUtil;

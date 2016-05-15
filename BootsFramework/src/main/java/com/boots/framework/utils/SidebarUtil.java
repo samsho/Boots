@@ -16,16 +16,16 @@ public class SidebarUtil {
         items.add(new SidebarItem("首页", "/", "fa-crosshairs"));
 
         SidebarItem tableManager = new SidebarItem("表格", "/table", "fa-info");
-        tableManager.addChild(new SidebarItem("数据表格", "/table/dataTable", "fa-paw"));
-        tableManager.addChild(new SidebarItem("JP表格", "/table/jptAble", "fa-paw"));
+        tableManager.addChild(new SidebarItem("数据表格", "/table/dataTable", "fa-mars-stroke-h"));
+        tableManager.addChild(new SidebarItem("JP表格", "/table/jpTable", "fa-mars-stroke-h"));
         items.add(tableManager);
 
         SidebarItem formManager = new SidebarItem("表单", "/form", "fa-tasks");
-        formManager.addChild(new SidebarItem("基础表单", "/form/baseForm", "fa-paw"));
-        formManager.addChild(new SidebarItem("校验表单", "/form/validatorForm", "fa-paw"));
-        formManager.addChild(new SidebarItem("文件上传", "/form/validatorForm", "fa-paw"));
-        formManager.addChild(new SidebarItem("编辑器", "/form/validatorForm", "fa-paw"));
-        formManager.addChild(new SidebarItem("日期选择", "/form/validatorForm", "fa-paw"));
+        formManager.addChild(new SidebarItem("基础表单", "/form/baseForm", "fa-mars-stroke-h"));
+        formManager.addChild(new SidebarItem("校验表单", "/form/validatorForm", "fa-mars-stroke-h"));
+        formManager.addChild(new SidebarItem("文件上传", "/form/validatorForm", "fa-mars-stroke-h"));
+        formManager.addChild(new SidebarItem("编辑器", "/form/validatorForm", "fa-mars-stroke-h"));
+        formManager.addChild(new SidebarItem("日期选择", "/form/validatorForm", "fa-mars-stroke-h"));
         items.add(formManager);
 
 /*

@@ -18,7 +18,7 @@
 			<div class="space-6"></div>
 		</div>
       </div>
-      
+
       <div class="row">
     			<div class="col-xs-12">
 			<div class="space-6"></div>
@@ -64,7 +64,7 @@
 			</div>
 		</div>
       </div>
-      
+
         <div class="row">
           <div class="col-xs-12 widget-container-col ui-sortable">
             <div class="widget-box widget-color-blue2 ui-sortable-handle">
@@ -116,7 +116,7 @@
 								</c:when>
 							</c:choose>
 						</c:if>
-						
+
 						</td>
 						<td>${data.value.isBackUp}</td>
 						<td>
@@ -202,8 +202,8 @@
         </div>
       </div>
     </div>
-    
-    
+
+
      <!-- 删除确认 -->
     <div class="modal fade" id="deleteConfirm" data-backdrop="static" tabindex="-1" >
       <div class="modal-dialog">
@@ -222,7 +222,7 @@
         </div>
       </div>
     </div>
-    
+
      <!-- 启用确认 -->
     <div class="modal fade" id="enableConfirm" data-backdrop="static" tabindex="-1" >
       <div class="modal-dialog">
@@ -241,7 +241,7 @@
         </div>
       </div>
     </div>
-    
+
      <!-- 禁用确认 -->
     <div class="modal fade" id="disableConfirm" data-backdrop="static" tabindex="-1" >
       <div class="modal-dialog">
@@ -260,7 +260,7 @@
         </div>
       </div>
     </div>
-    
+
      <!-- 表结构查看 -->
     <div class="modal fade" id="view" data-backdrop="static" tabindex="-1" >
       <div class="modal-dialog">
@@ -279,7 +279,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- 审核确认 -->
     <div class="modal fade" id="approvalTable" data-backdrop="static" tabindex="-1" >
       <div class="modal-dialog">
@@ -487,7 +487,7 @@
         $("#table").dataTable({
         	"lengthChange": false,
           	"language": language(),
-          	"bFilter": true,                       //不使用过滤功能   
+          	"bFilter": true,                       //不使用过滤功能
           	paging: true,
           	iDisplayLength:10,
           	"bAutoWidth": true//自动宽度
@@ -544,7 +544,7 @@
 	  });
 	  $($("#fileinput").find("label")[0]).addClass("col-xs-7");
 
-      
+
       /**
 	     * 删除确认
 	     * @param id
@@ -622,7 +622,7 @@
 			  });
 		  });
 	  }
-      
+
 	    /**
 	     * 启用确认
 	     * @param id
@@ -679,7 +679,7 @@
    	            		location.href = "${ctx}/htable/downDescriptor?tableName="+tableName+"&colony="+colony;
    	               }
    	             });
-   	    	
+
    	    }
 	    /**
 	     * 停用确认
@@ -720,7 +720,7 @@
 	        });
 	      });
 	    }
-	    
+
 	    /**
 	     * 审核
 	     * @param id
@@ -905,7 +905,7 @@
 			  });
 		  });
 	  }
-  	
+
 	$(function () {
 		<c:if test="${not empty error}">
        		$.scojs_message("${error}", $.scojs_message.TYPE_ERROR);
@@ -913,7 +913,7 @@
        	<c:if test="${not empty success}">
    			$.scojs_message("${success}", $.scojs_message.TYPE_OK);
    		</c:if>
-   		
+
 	});
 
     </script>

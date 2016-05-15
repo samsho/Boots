@@ -55,6 +55,7 @@ import java.util.concurrent.TimeUnit;
  */
 @Component
 @Aspect
+@SuppressWarnings("unchecked")
 public class ControllerAspect {
     private final Logger logger = LoggerFactory.getLogger(ControllerAspect.class);
     private final int poolSize = 2;
@@ -62,7 +63,8 @@ public class ControllerAspect {
     private ListeningScheduledExecutorService executorService;
 
     private BlockingQueue<LogEntity> queue;
-    @Resource(name = "logService")
+
+    @Resource
     private LogService logService;
 
     private int batchSize = 100;
@@ -205,7 +207,7 @@ public class ControllerAspect {
                 final List<LogEntity> entities = Lists.newArrayListWithExpectedSize(batchSize);
                 queue.drainTo(entities, batchSize);
                 logger.info("", entities);
-//                logService.save(entities);
+                logService.save(entities);
             }
         };
 

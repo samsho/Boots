@@ -19,6 +19,7 @@
 
     <!-- 静态资源(js/image)的访问 -->
     <mvc:resources location="/js/" mapping="/js/**"/>
+    <mvc:resources location="/WEB-INF/error/" mapping="/error/**"/>
     <mvc:resources location="/css/" mapping="/css/**" />
     <mvc:resources location="/component/" mapping="/component/**"/>
 

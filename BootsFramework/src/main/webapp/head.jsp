@@ -5,7 +5,6 @@
 <link href="component/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="component/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
 
-
 <!-- page specific plugin styles -->
 
 <!-- ace styles -->
@@ -72,7 +71,6 @@ window.jQuery || document.write("<script src='component/ace/assets/js/jquery1x.m
 <script src="component/ace/assets/js/jquery.flot.resize.min.js"></script>
 <script src="component/ace/assets/js/jquery.easypiechart.min.js"></script>
 
-
 <script src="component/ace/assets/js/jquery-ui.min.js"></script>
 <script src="component/ace/assets/js/moment.min.js"></script>
 <script src="component/highcharts/highcharts.js"></script>
@@ -83,3 +81,5 @@ window.jQuery || document.write("<script src='component/ace/assets/js/jquery1x.m
 
 <script src="component/select2/select2.js"></script>
 <link rel="stylesheet" href="component/select2/select2.css" />
+
+

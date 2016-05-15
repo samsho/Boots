@@ -26,7 +26,7 @@
 						<ul class="submenu">
 							<c:forEach items="${item.children}" var="sub">
 								<li class="<c:if test='${sub.active}'>active</c:if>"><a
-									href="<c:out value='${ctx}/${sub.url}'/>"> <i
+									href="<c:out value='${ctx}${sub.url}'/>"> <i
 										class="menu-icon fa fa-angle-right"></i> ${sub.title}
 								</a> <b class=" arrow"></b></li>
 							</c:forEach>
