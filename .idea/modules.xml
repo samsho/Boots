@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Boots.iml" filepath="$PROJECT_DIR$/Boots.iml" />
       <module fileurl="file://$PROJECT_DIR$/BootsFramework/BootsFramework.iml" filepath="$PROJECT_DIR$/BootsFramework/BootsFramework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Uediter/Uediter.iml" filepath="$PROJECT_DIR$/Uediter/Uediter.iml" />
     </modules>
   </component>
 </project>

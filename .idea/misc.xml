@@ -6,6 +6,8 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/BootsFramework" />
     <file type="web" url="file://$PROJECT_DIR$/BootstrapFramework" />
+    <file type="web" url="file://$PROJECT_DIR$/BootsWeb" />
+    <file type="web" url="file://$PROJECT_DIR$/Uediter" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -15,6 +17,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/BootsWeb/pom.xml" />
         <option value="$PROJECT_DIR$/BootstrapFramework/pom.xml" />
       </set>
     </option>

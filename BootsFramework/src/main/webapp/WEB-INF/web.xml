@@ -14,9 +14,11 @@
     </context-param>
 
     <!--单态-->
+<!--
     <listener>
         <listener-class>com.boots.framework.listener.LoginSessionListener</listener-class>
     </listener>
+-->
 
     <!--mvc-->
     <servlet>

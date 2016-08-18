@@ -24,12 +24,27 @@
         <processorPath useClasspath="true" />
         <module name="BootsFramework" />
       </profile>
+      <profile default="false" name="Annotation profile for BootsWeb" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Annotation profile for Uediter" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="Uediter" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Boots" target="1.8" />
       <module name="BootsFramework" target="1.8" />
       <module name="Bootstrap" target="1.8" />
       <module name="BootstrapFramework" target="1.8" />
+      <module name="BootsWeb" target="1.8" />
+      <module name="Uediter" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
