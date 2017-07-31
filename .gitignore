@@ -2,6 +2,7 @@
 /BootsFramework/BootsFramework.iml
 /Boots.iml
 /.idea
+/BootsWeb/.idea
 ### Java template
 *.class
 
